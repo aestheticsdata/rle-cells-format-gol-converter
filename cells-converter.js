@@ -14,7 +14,7 @@ const convertCells2Custom = (automata) => {
   for (let j=0; j<automata.length; j++) {
     arr.push([]);
     for (let i=0; i<lineSize; i++) {
-      arr[j][i] = automata[j][i] === 'O' ? '1' : '0';
+      arr[j][i] = automata[j][i] === 'O' ? 1 : 0;
     }
   }
   return arr;
